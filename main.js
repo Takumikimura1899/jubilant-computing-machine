@@ -80,3 +80,91 @@ console.log(c >= d)
 console.log(a === b && c === d)
 console.log(a === b || c=== d)
 console.log(!(a === b))
+
+
+const score = Math.random() * 100
+
+console.log(`点数: ${score}`)
+
+if(score >= 90) {
+    console.log("秀")
+} else if(score >= 75) {
+    console.log("優")
+} else if(score >= 60) {
+    console.log("良")
+} else if(score >= 30) {
+    console.log("可")
+} else {
+    console.log("不可")
+} 
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+let s = 2
+while(s < 100000) {
+    console.log(s)
+    s = s*s
+}
+
+
+const friends = ["サーバル", "フェネック", "アライグマ"]
+
+friends.forEach((friend) => {
+    console.log(friend)
+})
+
+
+function cook(food1, food2) {
+    console.log(food1 +"を切ります。")
+    console.log(food1 +"を炒めます。")
+    console.log(food2 +"をすりおろします。")
+    console.log(food1 +"に" + food2 + "を混ぜます。")
+}
+
+cook("豚肉", "生姜")
+
+
+function foo(a, b, c) {
+    console.log(`fooが引数${a},${b},${c}で呼び出された`)     // ${}は``で囲む
+}
+
+function bar() {
+    console.log("barが呼び出された")
+}
+
+foo(1, "abc", true)
+bar()
+
+
+function applyTax(price) {
+    const result = price * 0.1
+    return result
+}
+
+const tax =applyTax(12000)
+console.log(tax)
+
+
+
+// function double(X) {
+//     return X * 2
+// }
+
+// // 以下のようにも書ける(アロー関数という)
+// const double = (X) => {
+//     return X * 2
+// }
+
+// // アロー関数の時は引数が１つだけの場合は()を省略できる
+// const double = X => {
+//     return X * 2
+// }
+
+// // 更にアロー関数の書き方の時に限り、関数の中身がreturnだけの時は{}を省略できる
+// const double = X => X * 2
+
